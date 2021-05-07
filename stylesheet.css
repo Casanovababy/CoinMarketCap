@@ -1,0 +1,43 @@
+.header-container {
+    display: grid;
+    grid-template-columns: 10% 0.5fr 1fr 1fr 1fr 10% 1fr 10%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". Logo Logo-Text Crypto Stocks . Search .";
+  }
+  .Logo { grid-area: Logo; }
+  .Logo-Text { grid-area: Logo-Text; }
+  .Crypto { grid-area: Crypto; }
+  .Stocks { grid-area: Stocks; }
+  .Search { grid-area: Search; }
+
+.crypto {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 1fr 10%;
+    grid-template-rows: 10% 1fr 10% 1fr 10%;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . . . ."
+      ". BTC ETH XRP ."
+      ". . . . ."
+      ". DOGE ALGO LITE ."
+      ". . . . .";
+  }
+  .BTC { grid-area: BTC; }
+  .ETH { grid-area: ETH; }
+  .XRP { grid-area: XRP; }
+  .DOGE { grid-area: DOGE; }
+  .ALGO { grid-area: ALGO; }
+  .LITE { grid-area: LITE; }
+
+  .viktigt {
+    display: grid;
+    grid-template-columns: 10% 1fr 1.5fr 10%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". Marknadsdata Nyheter .";
+  }
+  .Marknadsdata { grid-area: Marknadsdata; }
+  .Nyheter { grid-area: Nyheter; }
